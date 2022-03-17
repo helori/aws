@@ -1,0 +1,40 @@
+{
+    "name": "helori/aws",
+    "type": "project",
+    "description": "AWS API utilities to interact with S3 services (S3, Scaleway...)",
+    "keywords": [],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3|^8.0",
+        "aws/aws-sdk-php": "^3.213",
+        "symfony/console": "^5.4",
+        "symfony/dotenv": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Helori\\Aws\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

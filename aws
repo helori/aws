@@ -1,0 +1,17 @@
+<?php
+
+require __DIR__.'/vendor/autoload.php';
+
+use Helori\Aws\Aws;
+
+error_reporting(E_ALL);
+
+if($argv[1] === 'cancel-uploads')
+{
+    (new Aws())->cancelUploads();
+}
+else if($argv[1] === 'config-cancel-uploads')
+{
+    (new Aws())->configCancelUploads();
+}
+
